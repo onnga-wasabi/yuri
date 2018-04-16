@@ -17,7 +17,7 @@ def get_image_urls(url):
         soup = BeautifulSoup(response.text, 'html5lib')
         print('html5lib parsed!')
 
-    with open('YuriTakami2.txt', 'a') as f:
+    with open('YuriTakami.txt', 'a') as f:
         f.write(url + '\n')
 
     next_url = soup.find_all(class_='mdMTMEnd01Pagination01Next')
