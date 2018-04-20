@@ -61,6 +61,7 @@ def save_images(dname):
             with open('Donefc2.txt', 'a') as f:
                 f.write(url+'\n')
             i += 1
+            sleep(1)
     return 0
 
 
