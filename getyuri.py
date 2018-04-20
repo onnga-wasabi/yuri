@@ -37,9 +37,9 @@ def save_image(url, dname, fname):
     with open(fname, 'wb') as f:
         try:
             f.write(content)
+            return 0
         except:
             return 0
-    return 0
 
 
 def get_image(url):
@@ -56,10 +56,6 @@ def get_image(url):
         return 0
     url = re.sub('<a href=\"', '', re.sub('\" target.*/></a>', '', str(url.a)))
     return requests.get(url).content
-
-
-def save_images(urls):
-    return 0
 
 
 if __name__ == '__main__':
