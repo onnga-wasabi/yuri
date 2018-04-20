@@ -2,9 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import os
-import cv2
-import numpy as np
-import sys
 from time import sleep
 
 
@@ -61,8 +58,8 @@ def save_images(dname):
         img_list = crawl_image_url(url[:-1])
         for img in img_list:
             save_image(img, dname, str(i))
-            print(img)
-            print(i)
+            with open('Donefc2.txt', 'a') as f:
+                f.write(url+'\n')
             i += 1
     return 0
 
