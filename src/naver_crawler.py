@@ -57,15 +57,12 @@ def save_image(url, dname, fname):
 
 
 def main():
-    save_images(hoge, DNAME)
-    #save_images(START, DNAME)
+    save_images(START, DNAME)
 
     return 0
 
 
 if __name__ == '__main__':
     START = '/odai/2134131257162744701/2143315691256592103'
-    hoge = '/odai/2134131257162744701/2134131282262767003'
-    END = '/odai/2134131257162744701/2134131282262766003'
     DNAME = '../data/naver/'
     main()
