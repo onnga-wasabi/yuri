@@ -3,10 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 import re
 from time import sleep
-import pickle
 import os
-import cv2
-import numpy as np
 
 
 def crawl_page_url(url):
